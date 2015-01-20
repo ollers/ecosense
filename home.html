@@ -592,6 +592,21 @@
 
 </footer>
 
+    <!--script added so as carousel slides automatically wihtout having to click on the arrows. Has to be loaded after carousel to work-->
+
+    <script type="text/javascript">
+
+    var $ = jQuery.noConflict();
+
+    $(document).ready(function() {
+     $('#myCarousel').carousel({
+           interval: 5000,
+              cycle: true
+     });
+    });
+
+    </script>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
