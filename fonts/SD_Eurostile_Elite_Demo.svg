@@ -1,0 +1,31 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg>
+<metadata>
+Created by FontForge 20110222 at Wed Jul 13 09:57:35 2011
+ By www-data
+Copyright (c) 2009 Synergy Digital Media Group. All rights reserved.
+</metadata>
+<defs>
+<font id="SDEurostileEliteDemo" horiz-adv-x="385" >
+  <font-face 
+    font-family="SD Eurostile Elite Demo"
+    font-weight="400"
+    font-stretch="normal"
+    units-per-em="1000"
+    panose-1="2 0 5 3 0 0 0 0 0 0"
+    ascent="800"
+    descent="-200"
+    bbox="0 -150 500 756"
+    underline-thickness="50"
+    underline-position="-100"
+  />
+    <missing-glyph />
+    <glyph glyph-name="_d_50" 
+d="M328 756v-164h-81v-578h81v-164h-271v906h271z" />
+    <glyph glyph-name="_d_83" horiz-adv-x="500" 
+d="M500 358v-164h-500v164h500z" />
+    <glyph glyph-name="_d_84" horiz-adv-x="600" 
+d="M488 375c0 -103 -83 -187 -188 -187c-107 0 -186 79 -187 192c0 101 84 183 187 183c102 0 188 -86 188 -188z" />
+  </font>
+</defs></svg>

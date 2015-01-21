@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-
+    <!--EcoSense Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="css/ecosense.css">
  
     <!-- Bootstrap Core CSS -->
     <!--<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
@@ -18,9 +19,6 @@
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
-
-    <!--EcoSense Custom CSS-->
-    <link rel="stylesheet" type="text/css" href="css/ecosense.css">
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
@@ -41,34 +39,8 @@
     <title>EcoSense</title>
 
     <!--Styling for user icon glyphicon on registration form. Was inserted here so as glypicon could be used on Dashboard page without this custom styling-->
+    <!--change 5 added span and button also removed inline styling on glypicon-off-->
     <style>
-    .navbar{background: #025793 ;
-    }
-
-      .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus
-      {color: #fff}
-
-      /* Adjust Menu colors - Active */
-.navbar-default a:active{
-color:          #fff;
-text-shadow:    none;
-}
-
-      .navbar-default .navbar-fnt {
-    color: #FFFFFF;
-    font-family: georgia;
-    font-weight: bold;
-}
-
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
-color: #025793;
-background-color: #fff;
-}
-
-
-
-
-
     span.glyphicon-user{
     font-size: 2.8em;
     background-color: #FFD202;
@@ -84,106 +56,42 @@ background-color: #fff;
     button.navbar-toggle{
       margin:25px 15px 15px 0px !important;
     }
-
-    body{
-      background-color: #fff;
-    }
-
-    div.regForm
-{
-
-  line-height: 1.0;
-  margin-top: 20px;
-  margin-bottom: 22px;
-  font-size: 20px;
-}
-
-div.copyright{
-    text-align: center;
-    margin-top: 45px;
-    font-size: 10px;
-    color:#999;
-
-}
-
-/*
-.navbar-default {
-  font-family: SD Eurostile Elite Demo;
-}*/
-
-/* Adjust Menu colors - Normal */
-.navbar .nav > li > a {
-color:          white;
-text-shadow:    none;
-}
-
-/* Adjust Menu colors - Hover */
-.navbar-default .nav > li > a:hover { 
-color:          #eee;                      
-text-shadow:    none;
-}
-
-/* Adjust Menu colors - Active */
-.navbar .nav > li > a:active
- {
-color:          green;
-text-shadow:    none;
-}
- 
- 
-/* Remove the Hover/Focus Colors  */
-.navbar .nav > li.current-menu-item > a, .navbar .nav > li.current-menu-ancestor > a, 
-.navbar .nav > li > a:hover, .navbar .nav > li > a:hover {
-color:          #025793;
-background-color: #eee;
-}
-
-
-.navbar-default .navbar-nav>.active>a, .navbar-nav>.active>a:hover, .navbar-nav>.active>a:focus {
-color: #fff;
-background-color: #97bf3a;
-}
-
     </style>
 
   </head>
 
 
   <body>
-
   <!--Header-->
     <div class="page-header hidden-xs">
 
       <!--change 3-->
 
-      <div style="margin-top:-40px"><img src="images/logo.png" alt="ecsosense"> <small style="font-family:verdana; font-size:18px; color:#999">smart living</small> 
+      <h1><img src="images/logo.png" alt="ecsosense"> <small>smart living</small> 
 
 <!--desktop only-->
         <form class="navbar-form navbar-right hidden-xs" role="search">
 
-          <div class="form-group" style="margin-top:30px">
+          <div class="form-group">
 
             <input type="text" class="form-control" placeholder="email">
             <input type="text" class="form-control" placeholder="password">
 
-            <a class="btn btn-primary" id="logIn" href="dashboard.html" role="button">Log in</a>
+            <a class="btn btn-default" href="dashboard3.html" role="button">Log in</a>
 
-          </div><!--form-group-->
+          </div><!--orm-group-->
 
         </form>
 
-      </div><!--logo-->
+      </h1><!--change to a div-->
        
     </div><!--page-header-->
   <!--/Header-->
 
 
-
-
-
   <!--Navigation Bar-->
         <!--Nav Bar Mobile-->
-   <nav class="navbar navbar-default navbar-fixed-top visible-xs">
+   <nav class="navbar navbar-default visible-xs">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -198,7 +106,9 @@ background-color: #97bf3a;
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="home.html" style="margin-top:-5px"><img src="images/logo_mobile.png" alt="ecsosense"></a>
+      <!--<a class="navbar-brand" href="#">EcoSense</a>-->
+      <!-- change 4-- also css change for smallerclass-->
+       <img src="images/logo.png" alt="ecsosense" style="padding:10px">
      <!-- <h1><img src="images/logo.png" alt="ecsosense" style="width:20%"> -->
 
     </div>
@@ -211,7 +121,7 @@ background-color: #97bf3a;
         <!--Nav Bar Pages/Tabs-->
         <ul class="nav navbar-nav pull-right">
           <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-          <li><a href="home.html">Pricing</a></li>
+          <li><a href="#">Pricing</a></li>
           <li><a href="#">Compare Provider</a></li>
           <li><a href="#">Energy Saving Products</a></li>
           <li><a href="#">Partners</a></li>
@@ -222,6 +132,8 @@ background-color: #97bf3a;
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+
+
     <!--Nav Bar Desktop-->
     <nav class="navbar navbar-default  hidden-xs">
       <div class="container-fluid">
@@ -230,7 +142,7 @@ background-color: #97bf3a;
         <!--change 1-->
         <ul class="nav navbar-nav pull-left">
           <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-          <li><a href="home.html">Pricing</a></li>
+          <li><a href="#">Pricing</a></li>
           <li><a href="#">Compare Provider</a></li>
           <li><a href="#">Energy Saving Products</a></li>
           <li><a href="#">Partners</a></li>
@@ -254,19 +166,18 @@ background-color: #97bf3a;
          <!-- Carousel items -->
           <div class="carousel-inner">
               <div class="active item">
-                  <img src="images/Carousel/Carbon_Footprint_Image_Only_960_Desktop_1a.jpg" alt="Energy Windmills" style ="width:100%" class="visible-lg">
-                  <img src="images/Carousel/Carbon_Footprint_Image_Only_320_Mobile_1.jpg" alt="Energy Windmills" style ="width:100%" class="visible-xs">
+                  <h2><img src="images/Carousel/Carbon_Footprint_Image_Only_960_Desktop_1a.jpg" alt="Energy Windmills" style ="width:100%"></h2>
                   <div class="carousel-caption">
-                    
+                    <H3><!--change this to a div with appropriate name and same attibute as <H3> tag-->
 
-                    <div class="regForm">
+
                       <!--Registration/Login Buttons - Mobile Only-->
                         <div class="col-xs-12 visible-xs">
                           <div class= "USP">
                             <div class="member_signin">
                    
                               <ul style="padding:5px">
-                                <li>Reduce Your Carbon Footprint</li>
+                                <li>Save up to 25% on Energy Costs</li>
                               </ul>
                   
                             </div><!--.panel-body-->
@@ -331,7 +242,7 @@ background-color: #97bf3a;
                           </div> <!--.panel member_signin-->
                         </div><!--.col-md-3 col-md-offset-3-->
                       </div><!--.container-->
-                    </div><!--.regForm-->
+                    </h3>
                   </div><!--.carousel-caption-->
                 </div><!--.active-item-->
 
@@ -340,20 +251,19 @@ background-color: #97bf3a;
 
               <div class="item">
                 <!--Change 2 env2.png-->
-                  <img src="images/Carousel/Carbon_Footprint_Image_Only_960_Desktop_6a.jpg" alt="Forrest" style ="width:100%" class="visible-lg">
-                 <img src="images/Carousel/Carbon_Footprint_Image_Only_320_Mobile_6.jpg" alt="Forrest" style ="width:100%" class="visible-xs">
+                  <h2><img src="images/Carousel/Carbon_Footprint_Image_Only_960_Desktop_6a.jpg" alt="Energy Windmills" style ="width:100%"></h2>
                   <div class="carousel-caption">
-                      <div class="regForm">
+                    <H3><!--change this to a div with appropriate name and same attibute as <H3> tag-->
 
 
                       <!--Registration/Login Buttons - Mobile Only-->
                         <div class="col-xs-12 visible-xs">
                           <div class= "USP">
                             <div class="member_signin">
-                  
+                   <!--change commented out
                               <ul style="padding:5px">
-                                <li>Try Our Approved Energy Saving Products</li>
-                              </ul>
+                                <li>Reduce Your Carbon Footprint</li>
+                              </ul>-->
                   
                             </div><!--.panel-body-->
                           </div><!--meber_signin-->
@@ -410,16 +320,15 @@ background-color: #97bf3a;
                           </div> <!--.panel member_signin-->
                         </div><!--.col-md-3 col-md-offset-3-->
                       </div><!--.container-->
-                    </div><!--.regForm-->
+                    </h3>
                   </div><!--.carousel-caption-->
                 </div><!--.active-item-->
 
 
                <div class="item">
-                  <img src="images/Carousel/Carbon_Footprint_Image_Only_960_Desktop_5a.jpg" alt="Energy Windmills" style ="width:100%" class="visible-lg">
-                  <img src="images/Carousel/Carbon_Footprint_Image_Only_320_Mobile_5.jpg" alt="Forrest" style ="width:100%" class="visible-xs">
+                   <h2><img src="images/Carousel/Carbon_Footprint_Image_Only_960_Desktop_5a.jpg" alt="Energy Windmills" style ="width:100%"></h2>
                   <div class="carousel-caption">
-                      <div class="regForm">
+                    <H3><!--change this to a div with appropriate name and same attibute as <H3> tag-->
 
 
                       <!--Registration/Login Buttons - Mobile Only-->
@@ -428,7 +337,7 @@ background-color: #97bf3a;
                             <div class="member_signin">
                    
                               <ul style="padding:5px">
-                                <li>Save up to 25% on Your Home Energy Bills</li>
+                                <li>Control Your Home Remotely</li>
                               </ul>
                   
                             </div><!--.panel-body-->
@@ -441,51 +350,8 @@ background-color: #97bf3a;
                         </div>
                       <!--Registration Form - Desktop only
                       http://snipplicious.com/snippet/14/trendy-login-form-->
-                      <div class="container" style="margin-top:5%">
-                        <div class="col-md-3 col-md-offset-6 hidden-xs">
-                          <div class="panel member_signin">
-                            <div class="panel-body">
 
-                              <div class="fa_user">
-                                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                              </div>
-
-                                <p class="registration">Registration</p>
-                                  <form role="form" class="loginform">
-
-                                    <div class="form-group">
-                                      <label for="exampleInputEmail1" class="sr-only">Email address</label>
-                                        <div class="input-group">
-                                          <input type="email" class="form-control" id="exampleInputEmail1"
-                                            placeholder="Email">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                      <label for="exampleInputPassword1" class="sr-only">Password</label>
-                                        <div class="input-group">
-                                          <input type="password" class="form-control" id="exampleInputPassword1"
-                                            placeholder="Password">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                      <label for="exampleInputPassword1" class="sr-only">Password</label>
-                                        <div class="input-group">
-                                          <input type="password" class="form-control" id="exampleInputPassword1"
-                                            placeholder="Retype Password">
-                                        </div>
-                                    </div>
-
-                                    <button type="button" class="btn btn-primary btn-md login">Sign Up</button>
-                                  </form>
-
-
-                            </div><!--.panel-body-->
-                          </div> <!--.panel member_signin-->
-                        </div><!--.col-md-3 col-md-offset-3-->
-                      </div><!--.container-->
-                    </div><!--.regForm-->
+                    </h3>
                   </div><!--.carousel-caption-->
                 </div><!--.active-item-->
         </div><!--carousel-inner-->
@@ -639,7 +505,7 @@ background-color: #97bf3a;
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       
-
+<<<<<<< Updated upstream
       <a href="dashboard.html">
       <span class="glyphicon glyphicon-off pull-right"title="Log In" aria-hidden="true"></span>
       </a>
@@ -647,24 +513,24 @@ background-color: #97bf3a;
     <!--Fixed Nav for Mobile,BrianBurke-->
    <div class="container-fluid">
        <div class="navbar-header">
+=======
 
 
 
     <!--Fixed Nav for Mobile,BrianBurke-->
     <div class="container-fluid">
       <div class="navbar-header">
-
-
+>>>>>>> Stashed changes
            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigationbar">
                <span class="sr-only">Toggle navigation</span>
                <span class="icon-bar"></span>
                <span class="icon-bar"></span>
                <span class="icon-bar"></span>
             </button>
-                <div class = "copyright">© Copyright 2015 EcoSense</copyright>
+            <a class="navbar-brand" href="#">Ecosense</a>
        </div>
        <div class="collapse navbar-collapse" id="navigationbar">
-           <ul class="nav navbar-nav ">
+           <ul class="nav navbar-nav">
                <li class="active"><a href="#">Home</a></li>
                <li><a href="#">Pricing</a></li>
                <li><a href="#">Compare Provider</a></li>    
@@ -691,19 +557,15 @@ background-color: #97bf3a;
           <li><a href="#">Energy Saving Products</a></li>
           <li><a href="#">Partners</a></li>
           <li><a href="#">Contact</a></li>
-
+            <ul>
+              <li style="list-style-type: none;"><div class = copyright>© Copyright 2015 EcoSense</copyright></li>
+              </li>
+            </ul>
           </ul>
     </div>
 
 
 </footer>
-
-          <div style="margin-top:-40px">
-            <ul>
-              <li style="list-style-type: none;"><div class = "copyright" style="color: #025793">© Copyright 2015 EcoSense</copyright></li>
-              </li>
-            </ul>
-          </div>
 
     <!--script added so as carousel slides automatically wihtout having to click on the arrows. Has to be loaded after carousel to work-->
 

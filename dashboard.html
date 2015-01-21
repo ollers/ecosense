@@ -25,6 +25,38 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+
+    <style type="text/css">
+
+    body {
+background-color: #025793;
+}
+
+
+.navbar-inverse {
+    background: #025793 ;
+}
+
+.side-nav{
+   background: #025793 ;
+}
+
+/* Adjust Menu colors - Normal */
+.navbar .nav > li > a{
+color:        #fff;
+text-shadow:    none;
+background-color: #025793;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
+color: #025793;
+background-color: #fff;
+}
+
+
+
+    </style>
   </head>
 
   <body>
@@ -41,7 +73,7 @@
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                   </button>
-                  <a class="navbar-brand" href="home3.html">EcoSense</a>
+                  <img src="images/logo_dash.png" alt="ecsosense" style="padding-top:7px"> <small style ="color:#ccc">smart living</small> 
                   
               </div>
               <!-- Top Menu Items -->
@@ -57,7 +89,7 @@
                           </li>
                           <li class="divider"></li>
                           <li>
-                              <a href="home3.html"><span class="glyphicon glyphicon-off" aria-hidden="true"></span> Log Out</a>
+                              <a href="home.html"><span class="glyphicon glyphicon-off" aria-hidden="true"></span> Log Out</a>
                           </li>
                       </ul>
                   </li>
@@ -91,13 +123,13 @@
                   <div class="row">
                       <div class="col-lg-12">
                           <h2 class="page-header">
-                              My Usage <small>Jan 2015</small> 
+                              My Home Utlities Usage <small>Jan 2015</small> 
                           </h2>
                       </div>
                   </div>
                   <!-- /.row -->
 
-                  
+                  <br>
 
                   <div class="row">                   
                     <div class="col-xs-12 col-lg-3 col-md-6">
@@ -192,6 +224,8 @@
                   </div>
               </div>
                   <!-- /.row -->
+                  <br>
+                  <br>
 
                     <div class="container-fluid">
                       <div class="span12">
@@ -202,7 +236,12 @@
               <div class="col-xs-12 pull-right">
         <!-- 4:3 aspect ratio -->
                   <div>
-                       <img src="images/history.png" alt="history" style ="width:100%">
+                       <img src="images/Ecosense_Floor_Plan_800_by_800_for_960_Desktop.png" alt="floorplan" style ="width:100%" usemap="#rooms">
+
+                       
+<map name="rooms">
+    <area shape="rect" coords="30,30,270,500" href="http://www.google.com" title="Kitchen" alt="Kitchen" />
+</map>
                   </div>
 
 
@@ -212,13 +251,15 @@
   </div>
    </div>
 
+   <!--
+
                  <div class="container-fluid">
       <div class="span12">
       <div style="padding:20px 0px 0 0px">
         <div class="row-fluid">
 
               <div class="col-xs-12 col-sm-4 pull-right">
-        <!-- 4:3 aspect ratio -->
+        <!-- 4:3 aspect ratio 
                   <div>
                        <img src="images/usage.png" alt="usage" style ="width:100%">
                   </div>
@@ -226,7 +267,7 @@
           </div>
 
                <div class="col-xs-12 col-sm-4 pull-right">
-        <!-- 4:3 aspect ratio -->
+        <!-- 4:3 aspect ratio 
                   <div>
                        <img src="images/budget.png" alt="budget" style ="width:100%">
                   </div>
@@ -234,13 +275,13 @@
           </div>
 
                  <div class="col-xs-12 col-sm-4 pull-right">
-        <!-- 4:3 aspect ratio -->
+        <!-- 4:3 aspect ratio 
                   <div>
                        <img src="images/cost.png" alt="cost" style ="width:100%">
                   </div>
                
           </div>
-
+-->
   
                 
           <!-- /#page-wrapper -->
