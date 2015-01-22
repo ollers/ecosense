@@ -9,64 +9,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <!-- Bootstrap Core CSS compressed file -->
+    <!--<link rel="stylesheet"href="css/bootstrap.min.css" -->
 
-    <!-- Custom CSS -->
-    <link href="css/ecosense.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 
-     <!--Custom Fonts - google fonts Titillium-->
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+    <!--EcoSense Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="css/ecosense.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+    <!--google fonts Titillium-->
    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600' rel='stylesheet' type='text/css'>
 
-    <title>EcoSense Dashboard</title>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+     <title>EcoSense Dashboard</title>
 
 
     <style type="text/css">
 
-    #page-wrapper {
-    width: 100%;
-    padding-top: 80px;
-    background-color: #fff;
-}
-
-    .dash_header{
-    font-family: 'Titillium Web';
-    color:#fff;
-    font-size: 20px;
-    background-color: #025793;
-    padding: 12px;
-    margin:0px;
-    width:100%;
-    /*position:fixed;*/
-    
-}
-
     body {
-
-background-color: #fff;
-margin-top:0px;
+background-color: #025793;
 }
 
 
 .navbar-inverse {
-    background: #025793;
-    margin-top: 50px;
-    /*padding-bottom: 0px;*/
-    position: fixed;
-    z-index: 100;
-    width: 100%;
-    border-radius: 0px;
+    background: #025793 ;
 }
 
 .side-nav{
    background: #025793 ;
-   margin-top: 111px;
 }
 
 /* Adjust Menu colors - Normal */
@@ -76,74 +53,36 @@ text-shadow:    none;
 background-color: #025793;
 }
 
+.navbar-inverse {
+  background-color: #fff;
+
+}
+
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
 color: #025793;
 background-color: #fff;
 }
 
 
-.navbar-header h2{
-  color:#eee;
-  padding:0px;
-  margin:0px;
-  padding: 5px;
-  padding-left: 250px;
-}
-
-.page-header {
-  background-color: #fff;
-  position: fixed;
-      right:0;
-    left:0;
-    z-index:100;
-}
-
 
     </style>
   </head>
-    <body>
 
-  <!--Header-->
-    <div class="page-header hidden-xs">
+  <body>
 
-      <!--change 3-->
+      <div id="wrapper">
 
-      <div style="margin-top:10px; background-color:#fff; position:top"><img src="images/logo.png" alt="ecsosense"> <small style="font-family:verdana; font-size:18px; color:#999">smart living</small> 
-
-<!--desktop only-->
-        <form class="navbar-form navbar-right hidden-xs" role="search">
-
-          <div class="form-group" style="margin-top:30px">
-
-            <input type="text" class="form-control" placeholder="username">
-            <input type="text" class="form-control" placeholder="email">
-
-            <a class="btn btn-primary" id="logIn" href="usage.html" role="button">Subscribe</a>
-
-          </div><!--form-group-->
-
-        </form>
-
-      </div><!--logo-->
-       
-    </div><!--page-header-->
-  <!--/Header-->
-<br>
-<br>
-<br>
-             
-              <nav class="navbar navbar-inverse hidden-xs" role="navigation">
+          <!-- Navigation -->
+          <nav class="navbar navbar-inverse navbar-fixed-top hidden-xs" role="navigation">
               <!-- Brand and toggle get grouped for better mobile display -->
               <div class="navbar-header">
-
-                      <h2 >My Home Utlities Usage <small>Jan 2015</small></h2>
-
                   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                       <span class="sr-only">Toggle navigation</span>
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                   </button>
+                  <a href="home.html"><img src="images/logo_dash.png" alt="ecsosense" style="padding-top:7px"></a> <small style ="color:#ccc">smart living</small> 
                   
               </div>
               <!-- Top Menu Items -->
@@ -166,49 +105,44 @@ background-color: #fff;
                           </li>
                       </ul>
                   </li>
-              <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
 
+
+
+              <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
               <div class="collapse navbar-collapse navbar-ex1-collapse">
-                  <ul class="nav navbar-nav side-nav" style="height:100%">
+                  <ul class="nav navbar-nav side-nav" style="padding-top:50px">
                       <li class="active">
-                          <a href=#>MY HOME UTILITIES USAGE</a>
+                          <a href=#> My Home Utilities Usage</a>
                       </li>
                       <li>
-                          <a href=#>MY ENERGY SAVINGS</a>
+                          <a href=#> My Energy Savings</a>
                       </li>
                       <li>
-                          <a href=#>BILLINGS AND PAYMENT</a>
+                          <a href=#>Billing and Payments</a>
                       </li>
                       <li>
-                          <a href=#>COMPARE PROVIDERS</a>
+                          <a href=#>Compare Providers</a>
                       </li>
                       <li>
-                          <a href=#>ENERGY SAVING PRODUCTS</a>
+                          <a href=#>Energy Saving Products</a>
                       </li>
                   </ul>
               </div> <!--.collapse navbar-collapse -->
-
           </nav>
-
-      <div id="wrapper">
-
-          <!-- Navigation -->
-
-                           <!-- <div class="dash_header">
-                    My Utilities
-
-                                  
-                  </div>-->
 
           <div id="page-wrapper">
 
-
-
               <div class="container-fluid">
 
-
-
-
+                  <!-- Page Heading -->
+                  <div class="row">
+                      <div class="col-lg-12" style="margin:0px">
+                          <h2 class="page-header">
+                              My Home Utlities Usage <small>Jan 2015</small> 
+                          </h2>
+                      </div>
+                  </div>
+                  <!-- /.row -->
 
                   <br>
 
@@ -309,6 +243,8 @@ background-color: #fff;
                   <br>
 
                     <div class="container-fluid">
+
+
                       <div class="span12">
 
 

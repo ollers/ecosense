@@ -14,8 +14,8 @@
     <!-- Custom CSS -->
     <link href="css/ecosense.css" rel="stylesheet">
 
-     <!--Custom Fonts - google fonts Titillium-->
-   <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600' rel='stylesheet' type='text/css'>
+    <!-- Custom Fonts -->
+    <link href="font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <title>EcoSense Dashboard</title>
 
@@ -29,44 +29,17 @@
 
     <style type="text/css">
 
-    #page-wrapper {
-    width: 100%;
-    padding-top: 80px;
-    background-color: #fff;
-}
-
-    .dash_header{
-    font-family: 'Titillium Web';
-    color:#fff;
-    font-size: 20px;
-    background-color: #025793;
-    padding: 12px;
-    margin:0px;
-    width:100%;
-    /*position:fixed;*/
-    
-}
-
     body {
-
-background-color: #fff;
-margin-top:0px;
+background-color: #025793;
 }
 
 
 .navbar-inverse {
-    background: #025793;
-    margin-top: 50px;
-    /*padding-bottom: 0px;*/
-    position: fixed;
-    z-index: 100;
-    width: 100%;
-    border-radius: 0px;
+    background: #025793 ;
 }
 
 .side-nav{
    background: #025793 ;
-   margin-top: 111px;
 }
 
 /* Adjust Menu colors - Normal */
@@ -82,68 +55,25 @@ background-color: #fff;
 }
 
 
-.navbar-header h2{
-  color:#eee;
-  padding:0px;
-  margin:0px;
-  padding: 5px;
-  padding-left: 250px;
-}
-
-.page-header {
-  background-color: #fff;
-  position: fixed;
-      right:0;
-    left:0;
-    z-index:100;
-}
-
 
     </style>
   </head>
-    <body>
 
-  <!--Header-->
-    <div class="page-header hidden-xs">
+  <body>
 
-      <!--change 3-->
+      <div id="wrapper">
 
-      <div style="margin-top:10px; background-color:#fff; position:top"><img src="images/logo.png" alt="ecsosense"> <small style="font-family:verdana; font-size:18px; color:#999">smart living</small> 
-
-<!--desktop only-->
-        <form class="navbar-form navbar-right hidden-xs" role="search">
-
-          <div class="form-group" style="margin-top:30px">
-
-            <input type="text" class="form-control" placeholder="username">
-            <input type="text" class="form-control" placeholder="email">
-
-            <a class="btn btn-primary" id="logIn" href="usage.html" role="button">Subscribe</a>
-
-          </div><!--form-group-->
-
-        </form>
-
-      </div><!--logo-->
-       
-    </div><!--page-header-->
-  <!--/Header-->
-<br>
-<br>
-<br>
-             
-              <nav class="navbar navbar-inverse hidden-xs" role="navigation">
+          <!-- Navigation -->
+          <nav class="navbar navbar-inverse navbar-fixed-top hidden-xs" role="navigation">
               <!-- Brand and toggle get grouped for better mobile display -->
               <div class="navbar-header">
-
-                      <h2 >My Home Utlities Usage <small>Jan 2015</small></h2>
-
                   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                       <span class="sr-only">Toggle navigation</span>
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                   </button>
+                  <img src="images/logo_dash.png" alt="ecsosense" style="padding-top:7px"> <small style ="color:#ccc">smart living</small> 
                   
               </div>
               <!-- Top Menu Items -->
@@ -155,9 +85,6 @@ background-color: #fff;
                               <a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Profile</a> 
                           </li>
                           <li>
-                              <a href="#"><span class="glyphicon glyphicon-eur" aria-hidden="true"></span> Account</a>
-                          </li>
-                          <li>
                               <a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Settings</a>
                           </li>
                           <li class="divider"></li>
@@ -167,48 +94,40 @@ background-color: #fff;
                       </ul>
                   </li>
               <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
-
               <div class="collapse navbar-collapse navbar-ex1-collapse">
-                  <ul class="nav navbar-nav side-nav" style="height:100%">
+                  <ul class="nav navbar-nav side-nav">
                       <li class="active">
-                          <a href=#>MY HOME UTILITIES USAGE</a>
+                          <a href=#> My Home Utlities Usage</a>
                       </li>
                       <li>
-                          <a href=#>MY ENERGY SAVINGS</a>
+                          <a href=#> My Energy Savings</a>
                       </li>
                       <li>
-                          <a href=#>BILLINGS AND PAYMENT</a>
+                          <a href=#>Billing and Payments</a>
                       </li>
                       <li>
-                          <a href=#>COMPARE PROVIDERS</a>
+                          <a href=#>Compare Providers</a>
                       </li>
                       <li>
-                          <a href=#>ENERGY SAVING PRODUCTS</a>
+                          <a href=#>Energy Saving Products</a>
                       </li>
                   </ul>
               </div> <!--.collapse navbar-collapse -->
-
           </nav>
-
-      <div id="wrapper">
-
-          <!-- Navigation -->
-
-                           <!-- <div class="dash_header">
-                    My Utilities
-
-                                  
-                  </div>-->
 
           <div id="page-wrapper">
 
-
-
               <div class="container-fluid">
 
-
-
-
+                  <!-- Page Heading -->
+                  <div class="row">
+                      <div class="col-lg-12">
+                          <h2 class="page-header">
+                              My Home Utlities Usage <small>Jan 2015</small> 
+                          </h2>
+                      </div>
+                  </div>
+                  <!-- /.row -->
 
                   <br>
 
