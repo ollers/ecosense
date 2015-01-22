@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,12 +28,12 @@
 
     <style type="text/css">
 
+
     #page-wrapper {
     width: 100%;
     padding-top: 110px;
     background-color: #fff;
 }
-
     .dash_header{
     font-family: 'Titillium Web';
     color:#fff;
@@ -46,43 +45,35 @@
     /*position:fixed;*/
     
 }
-
     body {
-
 background-color: #fff;
 margin-top:0px;
 }
-
-
 .navbar-inverse {
     background: #025793;
-    margin-top: 50px;
+    margin-top: 40px;
     /*padding-bottom: 0px;*/
     position: fixed;
     z-index: 100;
     width: 100%;
     border-radius: 0px;
 }
-
 .side-nav{
    background: #025793 ;
    margin-top: 111px;
 }
-
 /* Adjust Menu colors - Normal */
 .navbar .nav > li > a{
 color:        #fff;
 text-shadow:    none;
 background-color: #025793;
 }
-
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
 color: #025793;
 background-color: #fff;
 }
 
-
-.navbar-header h2{
+.navbar-header h2, h4{
   color:#eee;
   padding:0px;
   margin:0px;
@@ -90,25 +81,106 @@ background-color: #fff;
   padding-left: 250px;
 }
 
+.navbar-header h4{
+  padding-left: 10px;
+  width:80%;
+}
+
+.title{
+color:#eee;
+margin:0px;
+padding-top:10px;
+padding-left:10px;
+font-size: 18px
+}
+
+
 .page-header {
   background-color: #fff;
   position: fixed;
       right:0;
     left:0;
     z-index:100;
+    border:0px;
+}
+
+.logo_mobile{
+  background-color:#fff; 
+  position:top;
+  width:80%;
+  margin:10px,0px,10px,0px; 
+}
+
+    /*span.glyphicon-user{
+    font-size: 1.8em;
+    padding:30px 15px 15px 0px !important;
+
+  }*/
+
+    button.navbar-toggle{
+      margin:25px 15px 15px 0px !important;
+
+    }
+
+    .btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open>.dropdown-toggle.btn-default {
+color: #333;
+background-color: #e6e6e6;
+border-color:#fff;
+}
+
+/*footer navbar*/
+    .navbar-default{
+      background: #025793;
+       font-family: 'Titillium Web';
+       border-radius: 0px;
+    }
+
+      .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus
+      {color: #fff}
+
+      /* Adjust Menu colors - Active */
+.navbar-default a:active{
+color:          #fff;
+text-shadow:    none;
+}
+
+      .navbar-default .navbar-fnt {
+    color: #FFFFFF;
+    font-family: 'Titillium Web',georgia, sans-serif;
+    font-weight: bold;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+color: #025793;
+background-color: #fff;
+
 }
 
 
+div.copyright{
+    text-align: center;
+    margin-top: 45px;
+    font-size: 10px;
+    color:#999;
+
+}
+
     </style>
+
+
   </head>
     <body>
 
-  <!--Header-->
-    <div class="page-header hidden-xs">
+ 
+
+  <!--Desktop Header-->
+    <div class="page-header">
 
       <!--change 3-->
 
-      <div style="margin-top:10px; background-color:#fff; position:top"><img src="images/logo.png" alt="ecsosense"> <small style="font-family:verdana; font-size:18px; color:#999">smart living</small> 
+       <div class="row hidden-xs">  
+
+      <div style="background-color:#fff; position:top"><img src="images/logo.png" alt="ecsosense"> <small style="font-family:verdana; font-size:18px; color:#999">smart living</small> 
 
 <!--desktop only-->
         <form class="navbar-form navbar-right hidden-xs" role="search">
@@ -125,26 +197,58 @@ background-color: #fff;
         </form>
 
       </div><!--logo-->
+
+    </div><!--row-->
+       
+    </div><!--page-header-->
+
+
+    <!--Mobile Header-->
+    <div class="page-header">
+
+      <!--change 3-->
+
+       <div class="row visible-xs"> 
+
+
+      <div class="logo_mobile" style="margin-top:10px; margin-bottom:10px; margin-left:10px;"><img src="images/logo_mobile.png" alt="ecsosense"> 
+
+        <!--<small style="font-family:verdana; font-size:18px; color:#999">smart living</small> -->
+
+
+
+<!--desktop only-->
+        <form class="navbar-form navbar-right hidden-xs" role="search">
+
+          <div class="form-group" style="margin-top:30px">
+
+            <input type="text" class="form-control" placeholder="username">
+            <input type="text" class="form-control" placeholder="email">
+
+            <a class="btn btn-primary" id="logIn" href="usage.html" role="button">Subscribe</a>
+
+          </div><!--form-group-->
+
+        </form>
+
+      </div><!--logo-->
+
+    </div><!--row-->
        
     </div><!--page-header-->
   <!--/Header-->
 <br>
 <br>
 <br>
-             
+
+<!--Desktop Nav Bar-->    
               <nav class="navbar navbar-inverse hidden-xs" role="navigation">
               <!-- Brand and toggle get grouped for better mobile display -->
               <div class="navbar-header">
 
-                      <h2 >My Home Utlities Usage <small>Jan 2015</small></h2>
 
-                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                      <span class="sr-only">Toggle navigation</span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                  </button>
-                  
+                      <h2 >My Home Utlities Usage <small style="color:#ccc">Jan 2015</small></h2>
+
               </div>
               <!-- Top Menu Items -->
               <ul class="nav navbar-right top-nav">
@@ -152,7 +256,7 @@ background-color: #fff;
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sara Dewing <b class="caret"></b></a>
                       <ul class="dropdown-menu">
                           <li>
-                              <a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Profile</a> 
+                              <a href="#"><span class="glyphicon glyphicon-user" style= "font-size:1em;" aria-hidden="true"></span> Profile</a> 
                           </li>
                           <li>
                               <a href="#"><span class="glyphicon glyphicon-eur" aria-hidden="true"></span> Account</a>
@@ -190,13 +294,123 @@ background-color: #fff;
 
           </nav>
 
+<!--Mobile Nav bar-->
+   <nav class="navbar navbar-default navbar-fixed-top visible-xs" style="background-color:#fff">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      
+
+     <!-- <span class="glyphicon glyphicon-user pull-right" style= "font-size:1.8em; padding:15px 15px 15px 0px;" title="Log In" aria-hidden="true"></span>-->
+
+      <div class="btn-group pull-right">
+  <button type="button" class="btn btn-default dropdown-toggle pull-right" data-toggle="dropdown" aria-expanded="false" style="padding:0px">
+    <span class="glyphicon glyphicon-user pull-right" style= "font-size:1.8em;background-color:#fff;border-color:#fff;padding:30px 15px 15px 0px; color:#3072AB" title="Profile" aria-hidden="true"></span> 
+  </button>
+      <ul class="dropdown-menu">
+          <li><a href="#"><span class="glyphicon glyphicon-user" style= "font-size:1em;" aria-hidden="true"></span> Profile</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-eur" aria-hidden="true"></span> Account</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Settings</a></li>
+          <li class="divider"></li>
+          <li><a href="home.html"><span class="glyphicon glyphicon-off" aria-hidden="true"></span> Log Out</a></li>
+      </ul>
+
+</div>   
+
+
+
+
+   
+
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style="background-color:#3072AB;">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar" style="background-color:#ddd"></span>
+        <span class="icon-bar" style="background-color:#ddd"></span>
+        <span class="icon-bar" style="background-color:#ddd"></span>
+      </button>
+      <a class="navbar-brand" href="home.html" style="margin-top:-5px"><img src="images/logo_mobile.png" alt="ecsosense"></a>
+     <!-- <h1><img src="images/logo.png" alt="ecsosense" style="width:20%"> -->
+
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
+
+
+
+        <!--Nav Bar Pages/Tabs-->
+        <ul class="nav navbar-nav pull-right">
+          <li class="active"><a href="#">HOME <span class="sr-only">(current)</span></a></li>
+          <li><a href="home.html">PRICING</a></li>
+          <li><a href="#">COMPARE PROVIDER</a></li>
+          <li><a href="#">ENERGY SAVING PRODUCTS</a></li>
+          <li><a href="#">PARTNERS</a></li>
+          <li><a href="#">CONTACT</a></li>
+          </li>
+        </ul>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!--Mobile Dashboard Title bar-->
+ <nav class="navbar navbar-inverse visible-xs" role="navigation" style="margin-top:40px">
+
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+
+                      <div class="title">My Home Utlities Usage <small style="color:#ccc">Jan 2015</small></title>
+
+<!--
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse" style="margin:0px">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  
+              </div>
+
+              <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+
+         <!--     <div class="collapse navbar-collapse navbar-ex1-collapse" style="margin-top:0px">
+                  <ul class="nav navbar-nav side-nav" style="height:100%">
+                      <li class="active">
+                          <a href=#>MY HOME UTILITIES USAGE</a>
+                      </li>
+                      <li>
+                          <a href=#>MY ENERGY SAVINGS</a>
+                      </li>
+                      <li>
+                          <a href=#>BILLINGS AND PAYMENT</a>
+                      </li>
+                      <li>
+                          <a href=#>COMPARE PROVIDERS</a>
+                      </li>
+                      <li>
+                          <a href=#>ENERGY SAVING PRODUCTS</a>
+                      </li>
+                  </ul>-->
+
+                </div>
+              </div> <!--.collapse navbar-collapse -->
+
+
+
+ </nav>
+
+
+
+
+
+
+
       <div id="wrapper">
 
           <!-- Navigation -->
 
                            <!-- <div class="dash_header">
                     My Utilities
-
                                   
                   </div>-->
 
@@ -321,7 +535,7 @@ background-color: #fff;
 
                        
 <map name="rooms">
-    <area shape="rect" coords="30,30,270,500" href="http://www.google.com" title="Kitchen" alt="Kitchen" />
+    <area shape="rect" coords="30,30,270,500" href="savings.html" title="Kitchen" alt="Kitchen" />
 </map>
                   </div>
 
@@ -333,12 +547,10 @@ background-color: #fff;
    </div>
 
    <!--
-
                  <div class="container-fluid">
       <div class="span12">
       <div style="padding:20px 0px 0 0px">
         <div class="row-fluid">
-
               <div class="col-xs-12 col-sm-4 pull-right">
         <!-- 4:3 aspect ratio 
                   <div>
@@ -346,7 +558,6 @@ background-color: #fff;
                   </div>
                
           </div>
-
                <div class="col-xs-12 col-sm-4 pull-right">
         <!-- 4:3 aspect ratio 
                   <div>
@@ -354,7 +565,6 @@ background-color: #fff;
                   </div>
                
           </div>
-
                  <div class="col-xs-12 col-sm-4 pull-right">
         <!-- 4:3 aspect ratio 
                   <div>
@@ -372,6 +582,82 @@ background-color: #fff;
   </div>
 
   <br>
+
+  <!--Footer-->
+<footer>
+  <!--Nav Bar Mobile-->
+   <nav class="navbar navbar-default visible-xs">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      
+
+      <a href="usage.html">
+      <span class="glyphicon glyphicon-off pull-right"title="Log In" aria-hidden="true"></span>
+      </a>
+
+    <!--Fixed Nav for Mobile,BrianBurke-->
+   <div class="container-fluid">
+       <div class="navbar-header">
+
+
+
+    <!--Fixed Nav for Mobile,BrianBurke-->
+    <div class="container-fluid">
+      <div class="navbar-header">
+
+
+           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigationbar">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+            </button>
+                <div class = "copyright">© Copyright 2015 EcoSense</copyright>
+       </div>
+       <div class="collapse navbar-collapse" id="navigationbar">
+           <ul class="nav navbar-nav ">
+          <li class="active"><a href="#">HOME <span class="sr-only">(current)</span></a></li>
+          <li><a href="home.html">PRICING</a></li>
+          <li><a href="#">COMPARE PROVIDER</a></li>
+          <li><a href="#">ENERGY SAVING PRODUCTS</a></li>
+          <li><a href="#">PARTNERS</a></li>
+          <li><a href="#">CONTACT</a></li>
+          </li>
+           </ul>
+      </div><!-- /.navbar-collapse -->
+   </div><!-- /.container-fluid -->
+</nav>
+  <!--------------20/1/15------------->
+
+
+
+<!--Desktop Footer-->
+
+  <nav class="navbar navbar-default navbar-bottom visible-lg" role="navigation">
+    <div class="container">
+      <div style="padding-left:350px;">
+          <ul class="nav navbar-nav">
+          <li class="active"><a href="#">HOME <span class="sr-only">(current)</span></a></li>
+          <li><a href="home.html">PRICING</a></li>
+          <li><a href="#">COMPARE PROVIDER</a></li>
+          <li><a href="#">ENERGY SAVING PRODUCTS</a></li>
+          <li><a href="#">PARTNERS</a></li>
+          <li><a href="#">CONTACT</a></li>
+          </li>
+
+          </ul>
+    </div>
+
+
+</footer>
+
+          <div style="margin-top:-40px">
+            <ul>
+              <li style="list-style-type: none;"><div class = "copyright" style="color: #025793">© Copyright 2015 EcoSense</copyright></li>
+              </li>
+            </ul>
+          </div>
       
 
 
@@ -388,4 +674,3 @@ background-color: #fff;
   </body>
 
 </html>
-

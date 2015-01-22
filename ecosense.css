@@ -99,9 +99,9 @@ body {
 }
 
 .page-header {
-padding-bottom: 9px;
+/*padding-bottom: 9px;*/
 margin: 0px 20px 0px 20px!important;
-border-bottom: 1px solid #eee;
+/*border-bottom: 1px solid #eee;*/
 }
 
 @media(min-width:768px) {
