@@ -145,7 +145,7 @@ border: 1px solid transparent;
     }
 
     #page-wrapper {
-        padding: 0px;
+        padding-top: 100px;
     }
 
 /* Top Navigation */
@@ -191,6 +191,8 @@ border: 1px solid transparent;
     white-space: normal;
 }
 
+
+
 /************************** 
 Dashboard - Side Navigation 
 ***************************/
@@ -222,7 +224,7 @@ Dashboard - Side Navigation
     .side-nav li a:focus {
         outline: none;
         background-color: #fff !important;
-        height:100%;
+
 }
     .side-nav a:active { 
     background-color: #fff;
